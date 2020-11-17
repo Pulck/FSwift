@@ -1,0 +1,11 @@
+framework module FSwift {
+  umbrella header "FSwift.h"
+
+  export *
+  module * { export * }
+}
+
+module FSwift.Swift {
+    header "FSwift-Swift.h"
+    requires objc
+}

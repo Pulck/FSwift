@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6518A3D82563BC09007395AB /* FSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 6518A3D62563BC09007395AB /* FSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6518A3E12563BDD7007395AB /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6518A3E02563BDD7007395AB /* SwiftViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6518A3D32563BC09007395AB /* FSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6518A3D62563BC09007395AB /* FSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSwift.h; sourceTree = "<group>"; };
 		6518A3D72563BC09007395AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6518A3E02563BDD7007395AB /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +48,19 @@
 		6518A3D52563BC09007395AB /* FSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6518A3DF2563BD9E007395AB /* Sources */,
 				6518A3D62563BC09007395AB /* FSwift.h */,
 				6518A3D72563BC09007395AB /* Info.plist */,
 			);
 			path = FSwift;
+			sourceTree = "<group>";
+		};
+		6518A3DF2563BD9E007395AB /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6518A3E02563BDD7007395AB /* SwiftViewController.swift */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +105,7 @@
 				TargetAttributes = {
 					6518A3D22563BC09007395AB = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -130,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6518A3E12563BDD7007395AB /* SwiftViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +274,7 @@
 		6518A3DC2563BC09007395AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B83DV4T4W4;
@@ -269,6 +283,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -277,14 +292,17 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.liangc.FSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		6518A3DD2563BC09007395AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = B83DV4T4W4;
@@ -293,6 +311,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = FSwift/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,8 +320,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.liangc.FSwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
