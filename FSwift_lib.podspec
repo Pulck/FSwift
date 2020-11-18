@@ -123,7 +123,7 @@ Pod::Spec.new do |spec|
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
   
-  s.vendored_frameworks = "Framework/FSwift.framework"
+  spec.vendored_frameworks = "Framework/FSwift.framework"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
