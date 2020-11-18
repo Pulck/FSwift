@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint FSwift.podspec' to ensure this is a
+#  Be sure to run `pod spec lint FSwift_lib.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see https://guides.cocoapods.org/syntax/podspec.html
@@ -15,9 +15,9 @@ Pod::Spec.new do |spec|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  spec.name         = "FSwift"
+  spec.name         = "FSwift_lib"
   spec.version      = "0.0.1"
-  spec.summary      = "A short description of FSwift."
+  spec.summary      = "A short description of FSwift_lib."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -65,7 +65,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-   spec.platform     = :ios, "8.0"
+   spec.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   # spec.ios.deployment_target = "5.0"
@@ -90,9 +90,9 @@ Pod::Spec.new do |spec|
   #  For header files it will include any header in the folder.
   #  Not including the public_header_files will make all headers public.
   #
-
-  spec.source_files  = "FSwift/Sources/**/*"
-  spec.exclude_files = "FSwift/Exclude"
+#
+#  spec.source_files  = "FSwift_lib/Sources/**/*"
+#  spec.exclude_files = "FSwift_lib/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
 
@@ -122,6 +122,8 @@ Pod::Spec.new do |spec|
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
+  
+  s.vendored_frameworks = "Framework/FSwift.framework"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
