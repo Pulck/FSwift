@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SwiftViewController: UIViewController {
+public class SwiftViewController: UIViewController {
     
     lazy var helloLabel: UILabel = {
         let label = UILabel()
@@ -16,7 +16,7 @@ class SwiftViewController: UIViewController {
         return label
     }()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
 
